@@ -36,7 +36,7 @@
 	  	          <li><a href="#">Kategori Ett <span class="caret"></span></a>
 	  	            <ul class="dropdown-menu">
 	  	              <li><a href="#">Item 1</a></li>
-	  	              <li><a href="#">Iyem 2</a></li>
+	  	              <li><a href="#">Item 2</a></li>
 	  	              <li><a href="#">Item 3</a></li>
 	  	              <li><a href="#">Item 4</a></li>
 	  	            </ul>
@@ -44,7 +44,7 @@
 	  	          <li><a href="#">Kategori Två <span class="caret"></span></a>
 	  	            <ul class="dropdown-menu">
 	  	              <li><a href="#">Item 1</a></li>
-	  	              <li><a href="#">Iyem 2</a></li>
+	  	              <li><a href="#">Item 2</a></li>
 	  	              <li><a href="#">Item 3</a></li>
 	  	              <li><a href="#">Item 4</a></li>
 	  	            </ul>
@@ -52,7 +52,7 @@
 	  	          <li><a href="#">Kategori Tre <span class="caret"></span></a>
 	  	            <ul class="dropdown-menu">
 	  	              <li><a href="#">Item 1</a></li>
-	  	              <li><a href="#">Iyem 2</a></li>
+	  	              <li><a href="#">Item 2</a></li>
 	  	              <li><a href="#">Item 3</a></li>
 	  	              <li><a href="#">Item 4</a></li>
 	  	            </ul>
@@ -68,13 +68,160 @@
 	  </div>
 	</div>
 	
+	<div class="vertical-spacer"></div>
+	<!-- ============================== HYPE AREA -->
+  <div class="container">
+      <div class="row">
+          <div class="col-md-5">
+              <a href="#" class="thumbnail">
+                  <img src="http://placehold.it/300" alt="Featured Item or Announcement">
+              </a>
+          </div>
+          <div class="col-md-2">
+              <!-- ====== Carousel -->
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                          <a href="#" class="thumbnail">
+                              <img class="bg-info" src="http://placehold.it/300" alt="FeaturedBrand1">
+                          </a>
+                      </div>
+                      <div class="item">
+                          <a href="#" class="thumbnail">
+                              <img class="bg-danger" src="http://placehold.it/300" alt="FeaturedBrand2">
+                          </a>
+                      </div>
+                      <div class="item">
+                          <a href="#" class="thumbnail">
+                              <img class="bg-primary" src="http://placehold.it/300" alt="FeaturedBrand2">
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <!-- ======= Carousel END -->
+              <a href="#" class="thumbnail hidden-xs">
+                  <img src="http://placehold.it/300" alt="Featured Item or Announcement">
+              </a>
+          </div>
+          <div class="col-md-5 hidden-xs">
+              <a href="#" class="thumbnail">
+                  <img src="http://placehold.it/300" alt="Featured Item or Announcement">
+              </a>
+          </div>
+      </div>
+  </div>
+  <!-- ============================== PRODUCT AREA -->
+  <div class="container">
+      <div class="page-header">
+          <h2>Products</h2>
+      </div>
+      <div class="row">
+          <div class="col-md-3">
+              <div class="thumbnail product-items">
+                  <img src="http://placehold.it/300x180">
+                  <div class="caption">
+                      <p>Product <small>199SEK</small><a href="#" data-product="Product 1" data-price="199" class="btn-align-right btn btn-primary btn-sm" role="button" data-toggle="modal" data-target="#shoppingCart">Buy now</a></p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="thumbnail product-items">
+                  <img src="http://placehold.it/300x180">
+                  <div class="caption">
+                      <p>Product <small>349SEK</small><a href="#" data-product="Product 2" data-price="349" class="btn-align-right btn btn-primary btn-sm" role="button" data-toggle="modal" data-target="#shoppingCart">Buy now</a></p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="thumbnail product-items">
+                  <img src="http://placehold.it/300x180">
+                  <div class="caption">
+                      <p>Product <small>169SEK</small><a href="#" data-product="Product 3" data-price="169" class="btn-align-right btn btn-primary btn-sm" role="button" data-toggle="modal" data-target="#shoppingCart">Buy now</a></p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="thumbnail product-items">
+                  <img src="http://placehold.it/300x180">
+                  <div class="caption">
+                      <p>Product <small>189SEK</small><a href="#" data-product="Product 4" data-price="169" class="btn-align-right btn btn-primary btn-sm" role="button" data-toggle="modal" data-target="#shoppingCart">Buy now</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- ============================== MODAL  -->
+    <div class="modal fade" id="shoppingCart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Shopping Cart</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Product name</th>
+                                <th>Unit Price</th>
+                                <th>Quantity</th>
+                                <th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Product 1</td>
+                                <td>199</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Continue shopping</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Proceed to checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+		<!-- ============================== FOOTER AREA -->
+    <footer class="well">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>Sign up for exclusive offers:</p>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputAmount">your@email.com</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="exampleInputAmount" placeholder="your@email.com">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm">Sign up</button>
+                    </form>
+                </div>
+                <div class="col-xs-6 col-md-2">
+                    <p><strong>How to Order</strong></p>
+                    <p>FAQ</p>
+                    <p>Location</p>
+                    <p>Shipping</p>
+                </div>
+                <div class="col-xs-6 col-md-2">
+                    <p><strong>Contact</strong></p>
+                    <p>019-314799</p>
+                    <p>buy@more.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6">test</div>
-			<div class="col-sm-6">test</div>
-		</div>
-	</div>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
