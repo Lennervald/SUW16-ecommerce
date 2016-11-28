@@ -38,7 +38,7 @@ function updateCart(me, quantity) {
                 '<tr class="product" data-product="' + product +
                 '" data-price = "' + price + '">' +
                 '<td class="prod-image">' +
-                '<img src="' + image + '" width="40px" height="28px"></td>' + 
+                '<img class="shoppingCart-miniatyr" src="' + image + '"></td>' + 
                 '<td>' + product + '</td>' +
                 '<td class="quantity">' +
                 '<input class="form-control td-right input-sm" type="number" ' +
