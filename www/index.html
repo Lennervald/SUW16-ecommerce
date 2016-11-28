@@ -9,23 +9,32 @@
 </head>
 <body>
 
-  <div class="top-area">
-    <div class="container">
-      <!-- Logo -->
-      <div class="logo">logo</div>
-      
-      <!-- search form -->
-      <div class="input-group form-search">
-        <input type="text" class="form-control" placeholder="Search for...">
+	<!-- ============================== LOGO AREA -->
+  <div class="container-fluid bg-info">
+      <div class="row">
+          <div class="col-xs-4">
+              <div class="navbar-form navbar-left logo-area header-box">
+                  <a href="index.html">LOGO HERE</a>
+              </div>
+          </div>
+          <div class="col-xs-4">
+              <div class="seach-area header-box hidden-xs">
+                  <form class="navbar-form" role="search">
+                      <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Sök...">
+                      </div>
+                      <span type="submit" class="glyphicon glyphicon-search"></span>
+                  </form>
+              </div>
+          </div>
+          <div class="col-xs-4">
+              <div class="navbar-form navbar-right shoppingcart-area header-box">
+                  <p>0 SEK <span class="glyphicon glyphicon-shopping-cart"></span> <a href="#" class="hidden-xs" data-toggle="modal" data-target="#shoppingCart"> TILL KASSA</a></p>
+                  </p>
+              </div>
+          </div>
       </div>
-      
-      <!-- shopping cart -->
-      <div class="shoppingcart">
-        <p><a href="#" data-toggle="modal" data-target="#shoppingCart">0 SEK <span class="glyphicon glyphicon-shopping-cart"></span></a></p>
-      </div>
-    </div>
-  </div> 
-
+  </div>
   <!-- ============================== NAV AREA -->
   <div class="navbar navbar-default" role="navigation">
       <div class="container">
@@ -36,7 +45,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Logo</a>
+              <a class="navbar-brand" href="#">Project name</a>
           </div>
           <div class="navbar-collapse collapse">
               <!-- Left nav -->
@@ -78,7 +87,6 @@
           <!--/.nav-collapse -->
       </div>
   </div>
-
 
   <!-- ============================== HYPE AREA -->
   <div class="vertical-spacer"></div>
@@ -231,7 +239,7 @@
   </div> <!-- MODAL END -->
 
   <!-- ============================== FOOTER AREA -->
-  <footer>
+  <footer class="well">
       <div class="container">
           <div class="row">
               <div class="col-md-8">
