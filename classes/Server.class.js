@@ -22,6 +22,11 @@ module.exports = class Server {
       )
     );
 
+    var indexFile = m.path.join(g.settings.appRoot, this.settings.webroot)+ '/index.html';
+    this.app.get('*', function(req, res){
+      res.sendFile(indexFile);
+    });
+
     // compress all files using gzip
     this.app.use(m.compression());
 
