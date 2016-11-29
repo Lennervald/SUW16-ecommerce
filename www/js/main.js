@@ -37,3 +37,5 @@ $('body').on('click', '.product-link', function(){
     history.pushState(null,null,"product-details");
     doStuffOnUrlChange();
 });
+
+
