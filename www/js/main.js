@@ -1,6 +1,11 @@
-// change content in div.content 
-$('.thumbnail').on('click', '.product-link', function(){
-    $.get('product.html', function(data){
-        $('.content').html(data);
-    });
+//dom ready
+$(function(){
+  // change content in div.content 
+  $('body').on('click', '.product-link', function(){
+      $.get('product.html', function(data){
+          $('.content').html(data);
+      });
+  });
 });
+
+
