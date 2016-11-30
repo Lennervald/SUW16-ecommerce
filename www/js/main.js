@@ -43,6 +43,30 @@ function doStuffOnUrlChange(){
             $('.content').html(data);
         });
     }
+    if(urlPath == "product-5"){
+        $.get('product-5.html', function(data){
+
+            $('.content').html(data);
+        });
+    }
+    if(urlPath == "product-6"){
+        $.get('product-6.html', function(data){
+
+            $('.content').html(data);
+        });
+    }
+    if(urlPath == "product-7"){
+        $.get('product-7.html', function(data){
+
+            $('.content').html(data);
+        });
+    }
+    if(urlPath == "product-8"){
+        $.get('product-8.html', function(data){
+
+            $('.content').html(data);
+        });
+    }
 
     // if(urlPath == "product-details"){
     //     $.get('product.html', function(data){
@@ -75,6 +99,26 @@ $('body').on('click', '.product-link-3', function(){
 
 $('body').on('click', '.product-link-4', function(){
     history.pushState(null,null,"product-4");
+    doStuffOnUrlChange();
+});
+
+$('body').on('click', '.product-link-5', function(){
+    history.pushState(null,null,"product-5");
+    doStuffOnUrlChange();
+});
+
+$('body').on('click', '.product-link-6', function(){
+    history.pushState(null,null,"product-6");
+    doStuffOnUrlChange();
+});
+
+$('body').on('click', '.product-link-7', function(){
+    history.pushState(null,null,"product-7");
+    doStuffOnUrlChange();
+});
+
+$('body').on('click', '.product-link-8', function(){
+    history.pushState(null,null,"product-8");
     doStuffOnUrlChange();
 });
 
