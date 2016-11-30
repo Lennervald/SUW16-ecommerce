@@ -59,7 +59,9 @@ function updateCart(me, quantity) {
         totalSum += rowSum;
     });
 
+    $('.total-navbar').text(decimals(totalSum) + ' SEK'); //updates the total sum in the navbar
     $('#shoppingCart .total').last().text(decimals(totalSum) + ' SEK');
+
 
     $('#shoppingCart table').append($('#shoppingCart .total-cart'));
 
