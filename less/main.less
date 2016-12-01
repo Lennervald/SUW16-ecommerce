@@ -9,6 +9,12 @@
     transition: all ease-in-out 200ms;
 }
 
+.auto-margin {
+	margin: 0 auto;
+}
+
+// ================ GENERAL
+
 body {
     background-color: #f1f2ed;
     font-family: 'Open Sans', sans-serif;
@@ -36,37 +42,76 @@ a:hover {
     background-color: #323335;
     color: #e9e8e0;
     height: 55px;
-}
+    padding-top: 10px;
 
-.logo {
-    position: absolute;
-    top: 8px;
-    left: 100px;
-    width: 120px;
-    height: 30px;
-    color: #fff;
-    text-align: center;
-    line-height: 30px;
-    img {
-        width: 100%;
+    .logo {
+    	width: 100px;
+    	padding: 0;
+    	margin: 4px auto 0;
+
+    	img {
+    		width: 100px;
+    	}
+    	img:hover {
+	        .hover-darken;
+	    }
     }
-    img:hover {
-        .hover-darken;
+
+    .search {
+    	.auto-margin;
+    	padding: 0;
+    	.form-search {
+    		display: inline-block;
+    		width: 100%;
+    	}
+    	
     }
+
+    .shoppingcart {
+    	margin: 6px auto 0;
+    	padding: 0;
+    	width: 70px;
+    }
+
+
 }
 
-.form-search {
-    position: relative;
-    top: 8px;
-    left: 400px;
-    width: 280px;
-}
 
-.shoppingcart {
-    position: absolute;
-    right: 100px;
-    top: 15px;
-}
+
+
+
+
+
+
+// .logo {
+//     position: relative;
+//     top: 8px;
+//     left: 10px;
+//     width: 120px;
+//     height: 30px;
+//     color: #fff;
+//     text-align: center;
+//     line-height: 30px;
+//     img {
+//         width: 100%;
+//     }
+//     img:hover {
+//         .hover-darken;
+//     }
+// }
+
+// .form-search {
+//     position: absolute;
+//     // top: 8px;
+//     left: 200px;
+//     // width: 280px;
+// }
+
+// .shoppingcart {
+//     // position: absolute;
+//     right: 100px;
+//     top: 15px;
+// }
 
 // ====================== NAV-AREA
 // navbar enhancement
@@ -103,10 +148,9 @@ a:hover {
     p {
         margin-top: 0;
         font-size: 12px;
-        margin-left: 10px;
+        margin-left: 6px;
         font-style: italic;
-        // font-family: "Montserrat";
-        // font-weight: 400;
+        padding: 5px;
     }
 }
 
@@ -117,8 +161,6 @@ a:hover {
 // }
 
 .product-items {
-    // font-family: "Montserrat";
-    // font-weight: 400;
     small {
         margin-left: 10px;
         color: #ccc;
@@ -159,20 +201,20 @@ footer {
 // =========================   MEDIA QUERIES
 @media screen and (max-width: 420px) {
     .form-search {
-        width: 150px;
+        // width: 150px;
     }
     .logo {
-        position: absolute;
-        left: 10px;
-        width: 100px;
+        // position: absolute;
+        // left: 10px;
+        // width: 100px;
     }
     .shoppingcart {
         right: 10px;
     }
-    .form-search {
-        position: absolute;
-        left: 130px;
-    }
+    // .form-search {
+    //     // position: absolute;
+    //     // left: 130px;
+    // }
 }
 
 @media screen and (min-width: 768px) {
