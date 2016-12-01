@@ -15,23 +15,36 @@
 
 <!-- ============================== LOGO AREA -->
 
-  <div class="top-area">
+<div class="top-area">
     <div class="container">
-      <div class="logo">
-           <a href="index.html"><img src="img/logo.png"></a>
-      </div>
+        <div class="row">
+            <div class="col-xs-4">
+              <div class="logo">
+                   <a href="index.html"><img src="img/logo.png" alt="shoes logo"></a>
+              </div>
+            </div>
+
+            <div class="col-xs-4">
+            <div class="search">
+              <div class="input-group form-search">
+                <input type="text" class="form-control" placeholder="Search for...">
+              </div>
+              </div>
+            </div>
+
+            <div class="col-xs-4">
+              <div class="shoppingcart">
+                <p><a href="#" data-toggle="modal" data-target="#shoppingCart"><span class="total-navbar">0 SEK </span><span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+            </div>
+
+
+        </div>
       
-      <!-- search form -->
-      <div class="input-group form-search">
-        <input type="text" class="form-control" placeholder="Search for...">
-      </div>
-      
-      <!-- shopping cart -->
-      <div class="shoppingcart">
-        <p><a href="#" data-toggle="modal" data-target="#shoppingCart"><span class="total-navbar">0 SEK </span><span class="glyphicon glyphicon-shopping-cart"></span></a></p>
-      </div>
     </div>
   </div>
+
+
 
   <!-- ============================== NAV AREA -->
   <div class="navbar navbar-default" role="navigation">
@@ -83,12 +96,12 @@
  <div class="content"> <!--Content div-->
     <div class="container">
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-sm-6 col-md-5">
                <a href="#" class="thumbnail hypeBig">
                     <img src="img/hype-01.png" alt="Featured Item or Announcement">
                 </a>
             </div>
-            <div class="col-md-2">
+            <div class="col-sm-4 col-md-2 hidden-sm">
                 <!-- ====== Carousel -->
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -117,11 +130,11 @@
                     </div>
                 </div>
                 <!-- ======= Carousel END -->
-                <a href="#" class="thumbnail hypeSmall hidden-xs">
+                <a href="#" class="thumbnail hypeSmall hidden-xs hidden-sm">
                     <img class="midbox-image" src="img/hype-02.png" alt="Featured Item or Announcement">
                 </a>
             </div>
-            <div class="col-md-5 hidden-xs">
+            <div class="col-sm-6 col-md-5">
                 <a href="#" class="thumbnail hypeBig">
                     <img src="img/hype-03.png" alt="Featured Item or Announcement">
                 </a>
@@ -136,53 +149,53 @@
             <p>Products</p>
         </div>
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-sm-3">
             <div class="thumbnail product-items">
-              <img class="product-link-1" src="img/prod1.png">
+              <img class="product-link-1" src="img/prod1.png" alt="product 1">
               <div class="caption">
                 <p>Product 1 <small>199SEK</small></p>
                 <div class="btn-align-ight">
-                  <button data-product="Product 1" class="product-link-1 btn btn-sm buy-btn" role="button">Read More</button>
+                  <button data-product="Product 1" class="product-link-1 btn btn-sm buy-btn">Read More</button>
                   <a href="#" data-product="Product 1" data-price="199" data-img="img/prod1.png" class="btn btn-sm btn-primary buy-btn" role="button" data-toggle="modal" data-target="#shoppingCart">Buy</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-sm-3">
             <div class="thumbnail product-items">
-              <img class="product-link-2" src="img/prod2.png">
+              <img class="product-link-2" src="img/prod2.png" alt="product 2">
               <div class="caption">
                 <p>Product 2 <small>249SEK</small></p>
                 <div class="btn-align-ight">
-                  <button data-product="Product 2" class="product-link-2 btn btn-sm buy-btn" role="button">Read More</button>
+                  <button data-product="Product 2" class="product-link-2 btn btn-sm buy-btn">Read More</button>
                   <a href="#" data-product="Product 2" data-price="249" data-img="img/prod2.png" class="btn btn-primary btn-sm buy-btn" role="button" data-toggle="modal" data-target="#shoppingCart">Buy</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-sm-3">
             <div class="thumbnail product-items">
-              <img class="product-link-3" src="img/prod3.png">
+              <img class="product-link-3" src="img/prod3.png" alt="produst 3">
               <div class="caption">
                 <p>Product 3 <small>399SEK</small></p>
                 <div class="btn-align-ight">
-                  <button data-product="Product 3" class="product-link-3 btn btn-sm buy-btn" role="button">Read More</button>
+                  <button data-product="Product 3" class="product-link-3 btn btn-sm buy-btn">Read More</button>
                   <a href="#" data-product="Product 3" data-price="399" data-img="img/prod3.png" class="btn btn-primary btn-sm buy-btn" role="button" data-toggle="modal" data-target="#shoppingCart">Buy</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-sm-3">
             <div class="thumbnail product-items">
-              <img class="product-link-4" src="img/prod4.png"></a>
+              <a><img class="product-link-4" src="img/prod4.png" alt="produst 4"></a>
 
               <div class="caption">
                 <p>Product 1 <small>249SEK</small></p>
                 <div class="btn-align-ight">
-                  <button data-product="Product 4" class="product-link-4 btn btn-sm buy-btn" role="button">Read More</button>
+                  <button data-product="Product 4" class="product-link-4 btn btn-sm buy-btn">Read More</button>
                   <a href="#" data-product="Product 4" data-price="249" data-img="img/prod4.png" class="btn btn-primary btn-sm buy-btn" role="button" data-toggle="modal" data-target="#shoppingCart">Buy</a>
                 </div>
               </div>
