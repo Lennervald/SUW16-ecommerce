@@ -20,6 +20,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.thumbnail > img {
+    cursor: pointer;
+}
+
+
 a {
 	border: 0;
 }
@@ -70,51 +75,16 @@ a:hover {
     .shoppingcart {
     	margin: 6px auto 0;
     	padding: 0;
-    	width: 70px;
+    	width: 90px;
     }
 
 
 }
 
 
-
-
-
-
-
-
-// .logo {
-//     position: relative;
-//     top: 8px;
-//     left: 10px;
-//     width: 120px;
-//     height: 30px;
-//     color: #fff;
-//     text-align: center;
-//     line-height: 30px;
-//     img {
-//         width: 100%;
-//     }
-//     img:hover {
-//         .hover-darken;
-//     }
-// }
-
-// .form-search {
-//     position: absolute;
-//     // top: 8px;
-//     left: 200px;
-//     // width: 280px;
-// }
-
-// .shoppingcart {
-//     // position: absolute;
-//     right: 100px;
-//     top: 15px;
-// }
-
 // ====================== NAV-AREA
 // navbar enhancement
+
 .navbar-brand {
     display: none !important
 }
@@ -189,9 +159,34 @@ p.price-row small {
 }
 
 // ============================  FOOTER AREA
-footer {
-    margin-bottom: 0;
+.well {
+	background-color: #323335;
+	margin: 0;
+
 }
+
+footer {
+    
+    color: #e9e8e0;
+    .newletter-area {
+        p {
+            margin-right: 0;
+        }
+        .form-inline {
+            button {
+                margin-left: 6px;
+            }
+            .form-group,
+            .input-group {
+                width: 300px;
+            }
+        }
+    }
+}
+
+
+
+
 
 .howto p,
 .contact p {
@@ -199,23 +194,6 @@ footer {
 }
 
 // =========================   MEDIA QUERIES
-@media screen and (max-width: 420px) {
-    .form-search {
-        // width: 150px;
-    }
-    .logo {
-        // position: absolute;
-        // left: 10px;
-        // width: 100px;
-    }
-    .shoppingcart {
-        right: 10px;
-    }
-    // .form-search {
-    //     // position: absolute;
-    //     // left: 130px;
-    // }
-}
 
 @media screen and (min-width: 768px) {
     .navbar-collapse {
@@ -231,8 +209,12 @@ footer {
     .carousel-padding-bottom {
         bottom: 15px;
     }
+
+    .form-inline {
+        button {
+            margin-bottom: 20px;
+        }
 }
 
-.thumbnail > img {
-    cursor: pointer;
 }
+
