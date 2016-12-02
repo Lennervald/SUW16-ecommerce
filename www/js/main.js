@@ -79,6 +79,12 @@ function doStuffOnUrlChange(){
              $('.content').html(data);
          });
     }
+    if(urlPath == "featured-item"){
+         $.get('featured-item.html', function(data){
+
+             $('.content').html(data);
+         });
+    }
 
     // if(urlPath == "product-details"){
     //     $.get('product.html', function(data){
@@ -141,6 +147,11 @@ $('body').on('click', '.accessories-link', function(){
 
 $('body').on('click', '.special-offer-link', function(){
     history.pushState(null,null,"special-offer");
+    doStuffOnUrlChange();
+});
+
+$('body').on('click', '.featured-item-link', function(){
+    history.pushState(null,null,"featured-item");
     doStuffOnUrlChange();
 });
 
