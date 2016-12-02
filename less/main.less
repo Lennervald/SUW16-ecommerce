@@ -92,7 +92,13 @@ a:hover {
     .shoppingcart {
     	margin: 6px auto 0;
     	padding: 0;
-    	width: 90px;
+    	width: 100px;
+    	a {
+    		color: white;
+    		&:hover {
+    			text-decoration: none;
+    		}
+    	}
     }
 
 
@@ -117,6 +123,7 @@ a:hover {
 // ========================== HYPE AREA
 .content {
     width: 100%;
+    min-height: 410px;
 }
 
 .hypeBig img {
@@ -171,6 +178,19 @@ button {
 // =========================   PRODUCT PAGES
 p.price-row small {
     padding-right: 10px;
+}
+// styling breadcrumbs
+nav.breadcrumb a {
+	&:hover {
+		text-decoration: none;
+	}
+}
+.page-header {
+	margin: 0;
+	h4 {
+		margin-top: 0;
+	}
+
 }
 
 // =========================   SHOPPING CART & MODAL

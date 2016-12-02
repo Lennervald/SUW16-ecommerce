@@ -128,7 +128,7 @@ $('body').on('click', '.product-link-8', function(){
     doStuffOnUrlChange();
 });
 
-$('body').on('click', '.accessories', function(){
+$('body').on('click', '.accessories-link', function(){
     history.pushState(null,null,"accessories");
     doStuffOnUrlChange();
 });
