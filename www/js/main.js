@@ -67,6 +67,12 @@ function doStuffOnUrlChange(){
             $('.content').html(data);
         });
     }
+    if(urlPath == "accessories"){
+        $.get('accessories.html', function(data){
+
+            $('.content').html(data);
+        });
+    }
 
     // if(urlPath == "product-details"){
     //     $.get('product.html', function(data){
@@ -119,6 +125,11 @@ $('body').on('click', '.product-link-7', function(){
 
 $('body').on('click', '.product-link-8', function(){
     history.pushState(null,null,"product-8");
+    doStuffOnUrlChange();
+});
+
+$('body').on('click', '.accessories', function(){
+    history.pushState(null,null,"accessories");
     doStuffOnUrlChange();
 });
 
