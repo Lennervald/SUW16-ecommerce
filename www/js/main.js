@@ -15,7 +15,7 @@ function doStuffOnUrlChange(){
     
     // React on different paths
 
-    if(urlPath === "" || urlPath === "index.html"){
+    if(urlPath === "" || urlPath === "index.html" || urlPath === "checkout.html"){
         $('.content').html(startContent);
     }
 

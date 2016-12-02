@@ -1,86 +1,49 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>checkout page</title>
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" type="text/css" href="css/smartmenus.css">
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>e-handel</title>
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/smartmenus.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i" rel="stylesheet"> 
+
 </head>
 <body>
   <!-- ============================== LOGO AREA -->
-  <div class="top-area">
-    <div class="container">
-      <!-- Logo -->
-      <div class="logo"><a href="/">logo</a></div>
-      
-      <!-- search form -->
-      <div class="input-group form-search">
-        <input type="text" class="form-control" placeholder="Search for...">
-      </div>
-      
-      <!-- shopping cart -->
-      <div class="shoppingcart">
-        <p><a href="#" data-toggle="modal" data-target="#shoppingCart">0 SEK <span class="glyphicon glyphicon-shopping-cart"></span></a></p>
-      </div>
-    </div>
-  </div> 
 
-  <!-- ============================== NAV AREA -->
-  <div class="navbar navbar-default" role="navigation">
-      <div class="container">
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Logo</a>
-          </div>
-          <div class="navbar-collapse collapse">
-              <!-- Left nav -->
-              <ul class="nav navbar-nav">
-                  <li><a href="#">Catalog <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                          
-                          <li><a href="#">Men's Shoes <span class="caret"></span></a>
-                              <ul class="dropdown-menu">
-                                  <li><a href="#" data-img="img/prod1.png" data-product="Product 1" class="product-link" role="button">Item 1</a></li>
-                                  <li><a href="#" data-img="img/prod1.png" data-product="Product 2" class="product-link" role="button">Item 2</a></li>
-                                  <li><a href="#" data-img="img/prod1.png" data-product="Product 3" class="product-link" role="button">Item 3</a></li>
-                                  <li><a href="#" data-img="img/prod1.png" data-product="Product 4" class="product-link" role="button">Item 4</a></li>
-                              </ul>
-                          </li>
-                          <li><a href="#">Women's Shoes<span class="caret"></span></a>
-                              <ul class="dropdown-menu">
-                                  <li><a href="#" data-img="img/prod1.png" data-product="Product 1" class="product-link" role="button">Item 1</a></li>
-                                  <li><a href="#" data-img="img/prod1.png" data-product="Product 2" class="product-link" role="button">Item 2</a></li>
-                                  <li><a href="#" data-img="img/prod1.png" data-product="Product 3" class="product-link" role="button">Item 3</a></li>
-                                  <li><a href="#" data-img="img/prod1.png" data-product="Product 4" class="product-link" role="button">Item 4</a></li>
-                              </ul>
-                          </li>
-                          <li><a href="#">Kid's Shoes<span class="caret"></span></a>
-                              <ul class="dropdown-menu">
-                                  <li><a href="#" data-img="img/prod1.png" data-product="Product 1" class="product-link" role="button">Item 1</a></li>
-                                  <li><a href="#" data-img="img/prod1.png" data-product="Product 2" class="product-link" role="button">Item 2</a></li>
-                                  <li><a href="#" data-img="img/prod1.png" data-product="Product 3" class="product-link" role="button">Item 3</a></li>
-                                  <li><a href="#" data-img="img/prod1.png" data-product="Product 4" class="product-link" role="button">Item 4</a></li>
-                              </ul>
-                          </li>
-                      </ul>
-                  </li>
-                  <li><a href="#">Accessories</a></li>
-                  <li><a href="#">Brands</a></li>
-                  <li><a href="#">Special offers</a></li>
-              </ul>
-          </div>
-          <!--/.nav-collapse -->
-      </div>
+<div class="top-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4">
+              <div class="logo">
+                   <a href="index.html"><img src="img/logo.png" alt="shoes logo"></a>
+              </div>
+            </div>
+
+            <div class="col-xs-4">
+            <div class="search">
+              <div class="input-group form-search">
+                <input type="text" class="form-control" placeholder="Search for...">
+              </div>
+              </div>
+            </div>
+
+            <div class="col-xs-4">
+              
+            </div>
+
+
+        </div>
+      
+    </div>
   </div>
+
   
   <!-- ============================== CHECK OUT Fake -->
   <div class="vertical-spacer"></div>
-
+    <div class="content">
       <div class="container">
       <div class='row'>
           <div class='col-md-4'></div>
@@ -140,6 +103,7 @@
           <div class='col-md-4'></div>
       </div>
   </div>
+</div>
   <div class="vertical-spacer"></div>
   <div class="vertical-spacer"></div>
 
@@ -183,5 +147,4 @@
   <script src="js/shopping-cart.js"></script>
   <script src="js/main.js"></script>    
 </body>
-
 </html>
