@@ -1,4 +1,3 @@
-// HEJ! Byt ut all kod i gamla shoppingcart mot detta: 
 
 $(function() {
 
@@ -45,7 +44,7 @@ function updateCart(me, quantity) {
                 'min ="1" max="999" value="' + quantity + '"></td>' +
                 '<td class="item-price">' + decimals(price) + ' SEK</td>' +
                 '<td class="row-sum">' + decimals(rowSum) + ' SEK</td>' +
-                '<td class="remove"><span class="glyphicon glyphicon-remove"></span> </td>' +
+                '<td class="remove"><span class="glyphicon glyphicon-trash"></span> </td>' +
                 '</tr>'
             );
         }
