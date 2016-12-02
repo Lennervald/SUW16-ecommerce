@@ -73,6 +73,12 @@ function doStuffOnUrlChange(){
             $('.content').html(data);
         });
     }
+     if(urlPath == "special-offer"){
+         $.get('special-offer.html', function(data){
+
+             $('.content').html(data);
+         });
+    }
 
     // if(urlPath == "product-details"){
     //     $.get('product.html', function(data){
@@ -130,6 +136,11 @@ $('body').on('click', '.product-link-8', function(){
 
 $('body').on('click', '.accessories-link', function(){
     history.pushState(null,null,"accessories");
+    doStuffOnUrlChange();
+});
+
+$('body').on('click', '.special-offer-link', function(){
+    history.pushState(null,null,"special-offer");
     doStuffOnUrlChange();
 });
 
